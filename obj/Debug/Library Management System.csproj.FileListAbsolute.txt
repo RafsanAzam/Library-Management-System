@@ -1,0 +1,17 @@
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.AssemblyReference.cache
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.SuggestedBindingRedirects.cache
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Properties.Resources.resources
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.GenerateResource.cache
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.CoreCompileInputs.cache
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\bin\Debug\Library Management System.exe.config
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\bin\Debug\Library Management System.exe
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\bin\Debug\Library Management System.pdb
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library Management System.exe
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library Management System.pdb
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.LoginForm.resources
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.MemberDashboardForm.resources
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.SignUpForm.resources
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.LibrarianBookListForm.resources
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.LibrarianDashboardForm.resources
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.BookEntryForm.resources
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.ViewLibraryForm.resources
