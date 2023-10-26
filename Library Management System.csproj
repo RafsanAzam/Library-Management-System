@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="DataModels\Book.cs" />
+    <Compile Include="DataModels\BorrowedBook.cs" />
+    <Compile Include="DataModels\CurrentMember.cs" />
     <Compile Include="DataModels\Librarian.cs" />
     <Compile Include="DataModels\Member.cs" />
     <Compile Include="DataModels\Reservation.cs" />
@@ -57,6 +59,12 @@
     </Compile>
     <Compile Include="Forms\BookEntryForm.Designer.cs">
       <DependentUpon>BookEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BorrowBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BorrowBookForm.Designer.cs">
+      <DependentUpon>BorrowBookForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\EditBookForm.cs">
       <SubType>Form</SubType>
@@ -104,6 +112,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BookEntryForm.resx">
       <DependentUpon>BookEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BorrowBookForm.resx">
+      <DependentUpon>BorrowBookForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditBookForm.resx">
       <DependentUpon>EditBookForm.cs</DependentUpon>

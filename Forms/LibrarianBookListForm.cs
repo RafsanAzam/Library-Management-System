@@ -23,8 +23,14 @@ namespace Library_Management_System.Forms
 
         private void LibrarianBookListForm_Load(object sender, EventArgs e)
         {
+            LoadAvailableBooks();
+        }
+
+        private void LoadAvailableBooks()
+        {
+            // Read the list of available books from data source
             //Initialize a list to hold 
-           //List<Book> books = new List<Book>();
+            //List<Book> books = new List<Book>();
 
 
             //Define and add columns with headers
@@ -42,7 +48,7 @@ namespace Library_Management_System.Forms
             foreach (string line in lines)
             {
                 string[] bookDetails = line.Split(',');
-                if(bookDetails.Length == 5)
+                if (bookDetails.Length == 5)
                 {
                     Book book = new Book()
                     {
@@ -54,7 +60,7 @@ namespace Library_Management_System.Forms
                     };
                     books.Add(book);
                 }
-               
+
             }
 
             // Populate the ListView with book data
@@ -68,7 +74,10 @@ namespace Library_Management_System.Forms
                 item.SubItems.Add(book.IsAvailable ? "Available" : "Not Available");
                 bookListViewLibrarian.Items.Add(item);
             }
+
         }
+
+
 
         private void bookListViewLibrarian_SelectedIndexChanged(object sender, EventArgs e)
         {

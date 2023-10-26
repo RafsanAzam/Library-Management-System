@@ -37,5 +37,11 @@ namespace Library_Management_System.Forms
             ViewLibraryForm viewLibraryForm = new ViewLibraryForm();
             viewLibraryForm.Show();
         }
+
+        private void BorrowBookButton_Click(object sender, EventArgs e)
+        {
+            BorrowBookForm borrowBookForm = new BorrowBookForm();
+            borrowBookForm.Show();           
+        }
     }
 }

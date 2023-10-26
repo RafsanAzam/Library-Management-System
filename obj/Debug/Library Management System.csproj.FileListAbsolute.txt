@@ -16,3 +16,4 @@ F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Mana
 F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.BookEntryForm.resources
 F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.ViewLibraryForm.resources
 F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.EditBookForm.resources
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.BorrowBookForm.resources

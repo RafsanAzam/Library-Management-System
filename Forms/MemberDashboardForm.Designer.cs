@@ -68,6 +68,7 @@
             this.BorrowBookButton.TabIndex = 8;
             this.BorrowBookButton.Text = "Borrow Book";
             this.BorrowBookButton.UseVisualStyleBackColor = true;
+            this.BorrowBookButton.Click += new System.EventHandler(this.BorrowBookButton_Click);
             // 
             // ViewProfileButton
             // 

@@ -1,4 +1,5 @@
 ﻿using Library_Management_System.Controllers;
+using Library_Management_System.DataModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -70,6 +71,8 @@ namespace Library_Management_System.Forms
                 // Successful login
                 MessageBox.Show("Login successful. Redirect to the member dashboard");
 
+                // Set the member's ID in the currentMember Class
+                CurrentMember.MemberId = enteredUserName;
                 //Create an istance of the Member Dashboard Form
                 MemberDashboardForm memberDashboard = new MemberDashboardForm();
 
