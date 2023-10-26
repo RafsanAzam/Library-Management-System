@@ -184,5 +184,90 @@ namespace Library_Management_System.Forms
             
 
         }
+
+        private void EditBookButton_Click(object sender, EventArgs e)
+        {
+            if(bookListViewLibrarian.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedItem = bookListViewLibrarian.SelectedItems[0];
+                int selectedIndex = bookListViewLibrarian.Items.IndexOf(selectedItem);
+
+                //Get the book details from the selected item
+                Book selectedBook = books[selectedIndex];
+
+                //Create an instance of the EditBookForm and pass the selected book
+                EditBookForm editForm = new EditBookForm(selectedBook);
+                if(editForm.ShowDialog() == DialogResult.OK)
+                {
+                    // The librarian has edited the book; update the list and refresh the ListView
+                    books[selectedIndex] = editForm.EditedBook;
+
+                    // Refresh the ListView to reflect the changes
+                    RefreshListView();
+
+                    // Update the changes in the BooKList.txt File. 
+                    WriteBooksToFile("BookList.txt", books);
+                }
+
+            }
+        }
+
+        private void RefreshListView()
+        {
+            // Clear the existing items in the ListView
+            bookListViewLibrarian.Items.Clear();
+
+            // Re-populate the ListView with the updated book data
+            foreach (var book in books)
+            {
+                ListViewItem item = new ListViewItem(book.BookId);
+                item.SubItems.Add(book.Title);
+                item.SubItems.Add(book.Author);
+                item.SubItems.Add(book.ISBN);
+                item.SubItems.Add(book.IsAvailable ? "Available" : "Not Available");
+                bookListViewLibrarian.Items.Add(item);
+            }
+        }
+
+        private List<Book> ReadBooksFromFile(string filePath)
+        {
+            List<Book> books = new List<Book>();
+
+            string[] lines = File.ReadAllLines(filePath);
+
+            foreach (string line in lines)
+            {
+                string[] bookDetails = line.Split(',');
+                if (bookDetails.Length == 5)
+                {
+                    Book book = new Book()
+                    {
+                        BookId = bookDetails[0],
+                        Title = bookDetails[1],
+                        Author = bookDetails[2],
+                        ISBN = bookDetails[3],
+                        IsAvailable = bool.Parse(bookDetails[4])
+                    };
+                    books.Add(book);
+                }
+            }
+
+            return books;
+        }
+
+        private void WriteBooksToFile(string filePath, List<Book> books)
+        {
+            List<string> lines = new List<string>();
+
+            foreach (var book in books)
+            {
+                string bookDetails = $"{book.BookId},{book.Title},{book.Author},{book.ISBN},{book.IsAvailable}";
+                lines.Add(bookDetails);
+            }
+
+            File.WriteAllLines(filePath, lines);
+        }
+
+
     }
 }

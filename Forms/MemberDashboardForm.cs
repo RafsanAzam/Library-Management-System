@@ -26,5 +26,16 @@ namespace Library_Management_System.Forms
         {
 
         }
+
+        private void MemberDashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ViewLibraryButton_Click(object sender, EventArgs e)
+        {
+            ViewLibraryForm viewLibraryForm = new ViewLibraryForm();
+            viewLibraryForm.Show();
+        }
     }
 }

@@ -30,11 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtNewPassword = new System.Windows.Forms.TextBox();
-            this.txtRetypePassword = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.SignUpButton = new System.Windows.Forms.Button();
             this.RoleGroupBox = new System.Windows.Forms.GroupBox();
             this.MemberButton = new System.Windows.Forms.RadioButton();
@@ -55,23 +54,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // txtFirstName
+            // txtFullName
             // 
-            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(68, 301);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(320, 30);
-            this.txtFirstName.TabIndex = 4;
-            this.txtFirstName.Text = "First Name";
+            this.txtFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFullName.Location = new System.Drawing.Point(68, 301);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(320, 30);
+            this.txtFullName.TabIndex = 4;
+            this.txtFullName.Text = "Name";
             // 
-            // txtLastName
+            // txtUserName
             // 
-            this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(68, 359);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(320, 30);
-            this.txtLastName.TabIndex = 5;
-            this.txtLastName.Text = "Last Name";
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(68, 359);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(320, 30);
+            this.txtUserName.TabIndex = 5;
+            this.txtUserName.Text = "User Name";
             // 
             // txtEmail
             // 
@@ -82,23 +81,14 @@
             this.txtEmail.TabIndex = 6;
             this.txtEmail.Text = "Email";
             // 
-            // txtNewPassword
+            // txtPassword
             // 
-            this.txtNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPassword.Location = new System.Drawing.Point(68, 479);
-            this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.Size = new System.Drawing.Size(320, 30);
-            this.txtNewPassword.TabIndex = 7;
-            this.txtNewPassword.Text = "New password";
-            // 
-            // txtRetypePassword
-            // 
-            this.txtRetypePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRetypePassword.Location = new System.Drawing.Point(68, 536);
-            this.txtRetypePassword.Name = "txtRetypePassword";
-            this.txtRetypePassword.Size = new System.Drawing.Size(320, 30);
-            this.txtRetypePassword.TabIndex = 8;
-            this.txtRetypePassword.Text = "Retype Password";
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(68, 479);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(320, 30);
+            this.txtPassword.TabIndex = 7;
+            this.txtPassword.Text = "Password";
             // 
             // SignUpButton
             // 
@@ -106,12 +96,13 @@
             this.SignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpButton.ForeColor = System.Drawing.Color.Cyan;
-            this.SignUpButton.Location = new System.Drawing.Point(92, 600);
+            this.SignUpButton.Location = new System.Drawing.Point(98, 542);
             this.SignUpButton.Name = "SignUpButton";
             this.SignUpButton.Size = new System.Drawing.Size(243, 54);
             this.SignUpButton.TabIndex = 9;
             this.SignUpButton.Text = "Sign Up";
             this.SignUpButton.UseVisualStyleBackColor = false;
+            this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // RoleGroupBox
             // 
@@ -159,14 +150,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 750);
+            this.ClientSize = new System.Drawing.Size(800, 700);
             this.Controls.Add(this.RoleGroupBox);
             this.Controls.Add(this.SignUpButton);
-            this.Controls.Add(this.txtRetypePassword);
-            this.Controls.Add(this.txtNewPassword);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.pictureBox1);
             this.Name = "SignUpForm";
             this.Text = "Sign Up";
@@ -182,11 +172,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtNewPassword;
-        private System.Windows.Forms.TextBox txtRetypePassword;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button SignUpButton;
         private System.Windows.Forms.GroupBox RoleGroupBox;
         private System.Windows.Forms.RadioButton MemberButton;

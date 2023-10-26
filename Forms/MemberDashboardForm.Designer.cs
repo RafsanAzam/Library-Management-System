@@ -30,13 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberDashboardForm));
             this.label1 = new System.Windows.Forms.Label();
-            this.memberId = new System.Windows.Forms.Label();
-            this.MemberIdView = new System.Windows.Forms.Label();
-            this.memberName = new System.Windows.Forms.Label();
-            this.memberNameView = new System.Windows.Forms.Label();
-            this.memberEmail = new System.Windows.Forms.Label();
-            this.memberEmailView = new System.Windows.Forms.Label();
-            this.updateProfileButton = new System.Windows.Forms.Button();
+            this.ViewLibraryButton = new System.Windows.Forms.Button();
+            this.BorrowBookButton = new System.Windows.Forms.Button();
+            this.ViewProfileButton = new System.Windows.Forms.Button();
+            this.ReturnBookButton = new System.Windows.Forms.Button();
+            this.logOutButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,95 +48,76 @@
             this.label1.Text = "Welcome to The Member Dashboard!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // memberId
+            // ViewLibraryButton
             // 
-            this.memberId.AutoSize = true;
-            this.memberId.Location = new System.Drawing.Point(41, 234);
-            this.memberId.Name = "memberId";
-            this.memberId.Size = new System.Drawing.Size(108, 25);
-            this.memberId.TabIndex = 2;
-            this.memberId.Text = "Member ID";
-            this.memberId.Click += new System.EventHandler(this.label2_Click);
+            this.ViewLibraryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewLibraryButton.Location = new System.Drawing.Point(143, 215);
+            this.ViewLibraryButton.Name = "ViewLibraryButton";
+            this.ViewLibraryButton.Size = new System.Drawing.Size(192, 36);
+            this.ViewLibraryButton.TabIndex = 7;
+            this.ViewLibraryButton.Text = "View Library";
+            this.ViewLibraryButton.UseVisualStyleBackColor = true;
+            this.ViewLibraryButton.Click += new System.EventHandler(this.ViewLibraryButton_Click);
             // 
-            // MemberIdView
+            // BorrowBookButton
             // 
-            this.MemberIdView.AutoSize = true;
-            this.MemberIdView.Location = new System.Drawing.Point(205, 234);
-            this.MemberIdView.Name = "MemberIdView";
-            this.MemberIdView.Size = new System.Drawing.Size(143, 25);
-            this.MemberIdView.TabIndex = 4;
-            this.MemberIdView.Text = "memberId.view";
+            this.BorrowBookButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BorrowBookButton.Location = new System.Drawing.Point(143, 286);
+            this.BorrowBookButton.Name = "BorrowBookButton";
+            this.BorrowBookButton.Size = new System.Drawing.Size(192, 36);
+            this.BorrowBookButton.TabIndex = 8;
+            this.BorrowBookButton.Text = "Borrow Book";
+            this.BorrowBookButton.UseVisualStyleBackColor = true;
             // 
-            // memberName
+            // ViewProfileButton
             // 
-            this.memberName.AutoSize = true;
-            this.memberName.Location = new System.Drawing.Point(41, 283);
-            this.memberName.Name = "memberName";
-            this.memberName.Size = new System.Drawing.Size(141, 25);
-            this.memberName.TabIndex = 5;
-            this.memberName.Text = "Member Name";
+            this.ViewProfileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewProfileButton.Location = new System.Drawing.Point(143, 350);
+            this.ViewProfileButton.Name = "ViewProfileButton";
+            this.ViewProfileButton.Size = new System.Drawing.Size(192, 36);
+            this.ViewProfileButton.TabIndex = 9;
+            this.ViewProfileButton.Text = "View Profile";
+            this.ViewProfileButton.UseVisualStyleBackColor = true;
             // 
-            // memberNameView
+            // ReturnBookButton
             // 
-            this.memberNameView.AutoSize = true;
-            this.memberNameView.Location = new System.Drawing.Point(207, 283);
-            this.memberNameView.Name = "memberNameView";
-            this.memberNameView.Size = new System.Drawing.Size(224, 31);
-            this.memberNameView.TabIndex = 6;
-            this.memberNameView.Text = "memberName.view";
+            this.ReturnBookButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReturnBookButton.Location = new System.Drawing.Point(143, 417);
+            this.ReturnBookButton.Name = "ReturnBookButton";
+            this.ReturnBookButton.Size = new System.Drawing.Size(192, 36);
+            this.ReturnBookButton.TabIndex = 10;
+            this.ReturnBookButton.Text = "Return Book";
+            this.ReturnBookButton.UseVisualStyleBackColor = true;
             // 
-            // memberEmail
+            // logOutButton
             // 
-            this.memberEmail.AutoSize = true;
-            this.memberEmail.Location = new System.Drawing.Point(45, 325);
-            this.memberEmail.Name = "memberEmail";
-            this.memberEmail.Size = new System.Drawing.Size(137, 25);
-            this.memberEmail.TabIndex = 7;
-            this.memberEmail.Text = "Member Email";
+            this.logOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutButton.Location = new System.Drawing.Point(143, 479);
+            this.logOutButton.Name = "logOutButton";
+            this.logOutButton.Size = new System.Drawing.Size(192, 36);
+            this.logOutButton.TabIndex = 11;
+            this.logOutButton.Text = "LogOut";
+            this.logOutButton.UseVisualStyleBackColor = true;
             // 
-            // memberEmailView
-            // 
-            this.memberEmailView.AutoSize = true;
-            this.memberEmailView.Location = new System.Drawing.Point(205, 325);
-            this.memberEmailView.Name = "memberEmailView";
-            this.memberEmailView.Size = new System.Drawing.Size(219, 31);
-            this.memberEmailView.TabIndex = 8;
-            this.memberEmailView.Text = "memberEmail.view";
-            // 
-            // updateProfileButton
-            // 
-            this.updateProfileButton.AutoSize = true;
-            this.updateProfileButton.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.updateProfileButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.updateProfileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateProfileButton.ForeColor = System.Drawing.Color.Transparent;
-            this.updateProfileButton.Location = new System.Drawing.Point(105, 421);
-            this.updateProfileButton.Name = "updateProfileButton";
-            this.updateProfileButton.Size = new System.Drawing.Size(243, 54);
-            this.updateProfileButton.TabIndex = 9;
-            this.updateProfileButton.Text = "Update Profile";
-            this.updateProfileButton.UseVisualStyleBackColor = false;
-            // 
-            // MemberDashboard
+            // MemberDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(794, 679);
-            this.Controls.Add(this.updateProfileButton);
-            this.Controls.Add(this.memberEmailView);
-            this.Controls.Add(this.memberEmail);
-            this.Controls.Add(this.memberNameView);
-            this.Controls.Add(this.memberName);
-            this.Controls.Add(this.MemberIdView);
-            this.Controls.Add(this.memberId);
+            this.ClientSize = new System.Drawing.Size(603, 654);
+            this.Controls.Add(this.logOutButton);
+            this.Controls.Add(this.ReturnBookButton);
+            this.Controls.Add(this.ViewProfileButton);
+            this.Controls.Add(this.BorrowBookButton);
+            this.Controls.Add(this.ViewLibraryButton);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "MemberDashboard";
+            this.Name = "MemberDashboardForm";
             this.Text = "Member Dashboard";
+            this.Load += new System.EventHandler(this.MemberDashboardForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,12 +126,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label memberId;
-        private System.Windows.Forms.Label MemberIdView;
-        private System.Windows.Forms.Label memberName;
-        private System.Windows.Forms.Label memberNameView;
-        private System.Windows.Forms.Label memberEmail;
-        private System.Windows.Forms.Label memberEmailView;
-        private System.Windows.Forms.Button updateProfileButton;
+        private System.Windows.Forms.Button ViewLibraryButton;
+        private System.Windows.Forms.Button BorrowBookButton;
+        private System.Windows.Forms.Button ViewProfileButton;
+        private System.Windows.Forms.Button ReturnBookButton;
+        private System.Windows.Forms.Button logOutButton;
     }
 }

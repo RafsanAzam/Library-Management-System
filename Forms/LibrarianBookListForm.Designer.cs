@@ -35,6 +35,7 @@
             this.DeleteBookButton = new System.Windows.Forms.Button();
             this.SearchtextBox = new System.Windows.Forms.TextBox();
             this.searchBookButton = new System.Windows.Forms.Button();
+            this.EditBookButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BookListLabelLibrarian
@@ -52,6 +53,7 @@
             // bookListViewLibrarian
             // 
             this.bookListViewLibrarian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(228)))), ((int)(((byte)(210)))));
+            this.bookListViewLibrarian.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bookListViewLibrarian.FullRowSelect = true;
             this.bookListViewLibrarian.HideSelection = false;
             this.bookListViewLibrarian.Location = new System.Drawing.Point(241, 201);
@@ -113,6 +115,20 @@
             this.searchBookButton.Text = "Search";
             this.searchBookButton.UseVisualStyleBackColor = true;
             // 
+            // EditBookButton
+            // 
+            this.EditBookButton.BackColor = System.Drawing.Color.Green;
+            this.EditBookButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EditBookButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBookButton.ForeColor = System.Drawing.Color.Lavender;
+            this.EditBookButton.Location = new System.Drawing.Point(578, 632);
+            this.EditBookButton.Name = "EditBookButton";
+            this.EditBookButton.Size = new System.Drawing.Size(144, 44);
+            this.EditBookButton.TabIndex = 12;
+            this.EditBookButton.Text = "Edit Book";
+            this.EditBookButton.UseVisualStyleBackColor = false;
+            this.EditBookButton.Click += new System.EventHandler(this.EditBookButton_Click);
+            // 
             // LibrarianBookListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -120,6 +136,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1310, 819);
+            this.Controls.Add(this.EditBookButton);
             this.Controls.Add(this.searchBookButton);
             this.Controls.Add(this.SearchtextBox);
             this.Controls.Add(this.DeleteBookButton);
@@ -142,5 +159,6 @@
         private System.Windows.Forms.Button DeleteBookButton;
         private System.Windows.Forms.TextBox SearchtextBox;
         private System.Windows.Forms.Button searchBookButton;
+        private System.Windows.Forms.Button EditBookButton;
     }
 }
