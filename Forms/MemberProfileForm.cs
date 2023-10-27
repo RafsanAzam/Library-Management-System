@@ -48,7 +48,7 @@ namespace Library_Management_System.Forms
         private void ExtractDetailsFromMemberFile(string memberId, string filePath)
         {
             //Read existing lines from the file
-            string[] existingLines = File.ReadAllLines(filePath);
+            //string[] existingLines = File.ReadAllLines(filePath);
 
             string[] lines = File.ReadAllLines(filePath);
 
@@ -64,8 +64,8 @@ namespace Library_Management_System.Forms
                     // If the ID matches, add the member details to the list
                     memberDetailsList.Add(memberDetails[1]); // Name
                     memberDetailsList.Add(memberDetails[0]); // ID
+                    memberDetailsList.Add(memberDetails[2]); // UserName
                     memberDetailsList.Add(memberDetails[3]); // Email
-                    memberDetailsList.Add(memberDetails[4]); // Username
 
                 }
 
