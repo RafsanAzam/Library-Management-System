@@ -96,6 +96,12 @@
     <Compile Include="Forms\MemberDashboardForm.Designer.cs">
       <DependentUpon>MemberDashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MemberProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MemberProfileForm.Designer.cs">
+      <DependentUpon>MemberProfileForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ReturnBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MemberDashboardForm.resx">
       <DependentUpon>MemberDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemberProfileForm.resx">
+      <DependentUpon>MemberProfileForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReturnBookForm.resx">
       <DependentUpon>ReturnBookForm.cs</DependentUpon>

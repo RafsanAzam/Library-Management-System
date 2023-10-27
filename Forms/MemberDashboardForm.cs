@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,14 @@ namespace Library_Management_System.Forms
         {
             ReturnBookForm returnBookForm = new ReturnBookForm();
             returnBookForm.Show();
+        }
+
+        private void ViewProfileButton_Click(object sender, EventArgs e)
+        {
+            //Create an instance of the MemberProfileForm();
+            MemberProfileForm memberProfile = new MemberProfileForm();
+            memberProfile.Show();
+
         }
     }
 }

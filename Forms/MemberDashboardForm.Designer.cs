@@ -79,6 +79,7 @@
             this.ViewProfileButton.TabIndex = 9;
             this.ViewProfileButton.Text = "View Profile";
             this.ViewProfileButton.UseVisualStyleBackColor = true;
+            this.ViewProfileButton.Click += new System.EventHandler(this.ViewProfileButton_Click);
             // 
             // ReturnBookButton
             // 
