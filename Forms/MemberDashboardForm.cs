@@ -43,5 +43,11 @@ namespace Library_Management_System.Forms
             BorrowBookForm borrowBookForm = new BorrowBookForm();
             borrowBookForm.Show();           
         }
+
+        private void ReturnBookButton_Click(object sender, EventArgs e)
+        {
+            ReturnBookForm returnBookForm = new ReturnBookForm();
+            returnBookForm.Show();
+        }
     }
 }

@@ -89,6 +89,7 @@
             this.ReturnBookButton.TabIndex = 10;
             this.ReturnBookButton.Text = "Return Book";
             this.ReturnBookButton.UseVisualStyleBackColor = true;
+            this.ReturnBookButton.Click += new System.EventHandler(this.ReturnBookButton_Click);
             // 
             // logOutButton
             // 

@@ -36,12 +36,12 @@ namespace Library_Management_System.Forms
 
 
             //Define and add columns with headers
-            bookListViewLibrarian.View = View.Details;
-            bookListViewLibrarian.Columns.Add("Book ID", 80);
-            bookListViewLibrarian.Columns.Add("Title", 200);
-            bookListViewLibrarian.Columns.Add("Author", 150);
-            bookListViewLibrarian.Columns.Add("ISBN", 100);
-            bookListViewLibrarian.Columns.Add("Availability", 100);
+            bookListViewMember.View = View.Details;
+            bookListViewMember.Columns.Add("Book ID", 80);
+            bookListViewMember.Columns.Add("Title", 200);
+            bookListViewMember.Columns.Add("Author", 150);
+            bookListViewMember.Columns.Add("ISBN", 100);
+            bookListViewMember.Columns.Add("Availability", 100);
 
             // Read book details from the file and populate the list
 
@@ -74,7 +74,7 @@ namespace Library_Management_System.Forms
                 item.SubItems.Add(book.Author);
                 item.SubItems.Add(book.ISBN);
                 item.SubItems.Add(book.IsAvailable ? "Available" : "Not Available");
-                bookListViewLibrarian.Items.Add(item);
+                bookListViewMember.Items.Add(item);
             }
 
         }
@@ -84,7 +84,7 @@ namespace Library_Management_System.Forms
             string searchQuery = SearchtextBox.Text.ToLower(); // Convert to lowercase for case-insensitive search
 
             // Clear the existing items in the ListView 
-            bookListViewLibrarian.Items.Clear();
+            bookListViewMember.Items.Clear();
 
             foreach (var book in books)
             {
@@ -98,7 +98,7 @@ namespace Library_Management_System.Forms
                     item.SubItems.Add(book.Author);
                     item.SubItems.Add(book.ISBN);
                     item.SubItems.Add(book.IsAvailable ? "Available" : "Not Available");
-                    bookListViewLibrarian.Items.Add(item);
+                    bookListViewMember.Items.Add(item);
                 }
             }
         }
@@ -114,9 +114,9 @@ namespace Library_Management_System.Forms
         private void BorrowBookButton_Click(object sender, EventArgs e)
         {
             // Check if an item is selected 
-            if(bookListViewLibrarian.SelectedItems.Count > 0)
+            if(bookListViewMember.SelectedItems.Count > 0)
             {
-                ListViewItem selectedItem = bookListViewLibrarian.SelectedItems[0];
+                ListViewItem selectedItem = bookListViewMember.SelectedItems[0];
 
                 //Get the book ID from the selected item
                 string bookId = selectedItem.SubItems[0].Text;
@@ -170,7 +170,7 @@ namespace Library_Management_System.Forms
         private void RefreshListView()
         {
             // Clear the existing items in the ListView
-            bookListViewLibrarian.Items.Clear();
+            bookListViewMember.Items.Clear();
 
             // Re-populate the ListView with the updated book data
             foreach (var book in books)
@@ -180,7 +180,7 @@ namespace Library_Management_System.Forms
                 item.SubItems.Add(book.Author);
                 item.SubItems.Add(book.ISBN);
                 item.SubItems.Add(book.IsAvailable ? "Available" : "Not Available");
-                bookListViewLibrarian.Items.Add(item);
+                bookListViewMember.Items.Add(item);
             } 
         }
 
@@ -221,5 +221,9 @@ namespace Library_Management_System.Forms
 
         }
 
+        private void bookListViewLibrarian_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

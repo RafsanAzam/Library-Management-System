@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BorrowBookForm));
             this.BookListLabelLibrarian = new System.Windows.Forms.Label();
             this.SearchtextBox = new System.Windows.Forms.TextBox();
-            this.bookListViewLibrarian = new System.Windows.Forms.ListView();
+            this.bookListViewMember = new System.Windows.Forms.ListView();
             this.BorrowBookButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -60,18 +60,19 @@
             this.SearchtextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.SearchtextBox_MouseClick);
             this.SearchtextBox.TextChanged += new System.EventHandler(this.SearchtextBox_TextChanged);
             // 
-            // bookListViewLibrarian
+            // bookListViewMember
             // 
-            this.bookListViewLibrarian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(172)))), ((int)(((byte)(133)))));
-            this.bookListViewLibrarian.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bookListViewLibrarian.FullRowSelect = true;
-            this.bookListViewLibrarian.HideSelection = false;
-            this.bookListViewLibrarian.Location = new System.Drawing.Point(228, 157);
-            this.bookListViewLibrarian.MultiSelect = false;
-            this.bookListViewLibrarian.Name = "bookListViewLibrarian";
-            this.bookListViewLibrarian.Size = new System.Drawing.Size(839, 441);
-            this.bookListViewLibrarian.TabIndex = 12;
-            this.bookListViewLibrarian.UseCompatibleStateImageBehavior = false;
+            this.bookListViewMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(172)))), ((int)(((byte)(133)))));
+            this.bookListViewMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bookListViewMember.FullRowSelect = true;
+            this.bookListViewMember.HideSelection = false;
+            this.bookListViewMember.Location = new System.Drawing.Point(228, 157);
+            this.bookListViewMember.MultiSelect = false;
+            this.bookListViewMember.Name = "bookListViewMember";
+            this.bookListViewMember.Size = new System.Drawing.Size(839, 441);
+            this.bookListViewMember.TabIndex = 12;
+            this.bookListViewMember.UseCompatibleStateImageBehavior = false;
+            this.bookListViewMember.SelectedIndexChanged += new System.EventHandler(this.bookListViewLibrarian_SelectedIndexChanged);
             // 
             // BorrowBookButton
             // 
@@ -95,7 +96,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1329, 697);
             this.Controls.Add(this.BorrowBookButton);
-            this.Controls.Add(this.bookListViewLibrarian);
+            this.Controls.Add(this.bookListViewMember);
             this.Controls.Add(this.SearchtextBox);
             this.Controls.Add(this.BookListLabelLibrarian);
             this.Name = "BorrowBookForm";
@@ -110,7 +111,7 @@
 
         private System.Windows.Forms.Label BookListLabelLibrarian;
         private System.Windows.Forms.TextBox SearchtextBox;
-        private System.Windows.Forms.ListView bookListViewLibrarian;
+        private System.Windows.Forms.ListView bookListViewMember;
         private System.Windows.Forms.Button BorrowBookButton;
     }
 }
