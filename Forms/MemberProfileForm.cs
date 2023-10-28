@@ -109,7 +109,7 @@ namespace Library_Management_System.Forms
 
                 // Populate the ListView with book data
 
-                foreach (var book in borrowedBooks)
+                foreach (var book in borrowedBooks) 
                 {
                     ListViewItem item = new ListViewItem(book.BookId);
                     item.SubItems.Add(book.Title);

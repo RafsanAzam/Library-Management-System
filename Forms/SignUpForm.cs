@@ -21,11 +21,6 @@ namespace Library_Management_System.Forms
             InitializeComponent();
         }
 
-        private void signUpLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SignUp_Load(object sender, EventArgs e)
         {
 
@@ -134,5 +129,57 @@ namespace Library_Management_System.Forms
             File.WriteAllLines(filePath, UpdatedLines);
         }
 
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtUserName_Tged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NameTxtClicked(object sender, EventArgs e)
+        {
+            if (txtFullName.Text == "Name")
+            {
+                txtFullName.Clear();
+            }
+        }
+
+        private void txtUserNameMouseClick(object sender, EventArgs e)
+        {
+            if (txtUserName.Text == "User Name")
+            {
+                txtUserName.Clear();
+            }
+        }
+
+        private void txtEmailMouseClick(object sender, EventArgs e)
+        {
+            if (txtEmail.Text == "Email")
+            {
+                txtEmail.Clear();
+            }
+        }
+
+        private void txtPasswordMouseClick(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "Password")
+            {
+                txtPassword.Clear();
+                txtPassword.PasswordChar = '*';
+            }
+        }
     }
 }

@@ -62,6 +62,7 @@
             this.txtFullName.Size = new System.Drawing.Size(320, 30);
             this.txtFullName.TabIndex = 4;
             this.txtFullName.Text = "Name";
+            this.txtFullName.Click += new System.EventHandler(this.NameTxtClicked);
             // 
             // txtUserName
             // 
@@ -71,6 +72,8 @@
             this.txtUserName.Size = new System.Drawing.Size(320, 30);
             this.txtUserName.TabIndex = 5;
             this.txtUserName.Text = "User Name";
+            this.txtUserName.Click += new System.EventHandler(this.txtUserNameMouseClick);
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // txtEmail
             // 
@@ -80,6 +83,8 @@
             this.txtEmail.Size = new System.Drawing.Size(320, 30);
             this.txtEmail.TabIndex = 6;
             this.txtEmail.Text = "Email";
+            this.txtEmail.Click += new System.EventHandler(this.txtEmailMouseClick);
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtPassword
             // 
@@ -89,6 +94,7 @@
             this.txtPassword.Size = new System.Drawing.Size(320, 30);
             this.txtPassword.TabIndex = 7;
             this.txtPassword.Text = "Password";
+            this.txtPassword.Click += new System.EventHandler(this.txtPasswordMouseClick);
             // 
             // SignUpButton
             // 
