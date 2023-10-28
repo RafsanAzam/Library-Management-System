@@ -29,7 +29,8 @@ namespace Library_Management_System.Forms
 
         private void UpdateProfileBtn_Click(object sender, EventArgs e)
         {
-
+            LibrarianProfileForm librarianProfileForm = new LibrarianProfileForm();
+            librarianProfileForm.Show();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

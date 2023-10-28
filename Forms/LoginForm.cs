@@ -84,8 +84,11 @@ namespace Library_Management_System.Forms
                 // Successful login
                 MessageBox.Show("Login successful. Redirect to the Librarian dashboard");
 
+                // Set the member's ID in the currentMember Class
+                CurrentLibrarian.LibrarianId = enteredUserName;
+
                 //Create an istance of the Librarian Dashboard Form
-               LibrarianDashboardForm librarianDashboard = new LibrarianDashboardForm();
+                LibrarianDashboardForm librarianDashboard = new LibrarianDashboardForm();
 
                 // Show the Librarian Dashboard Form
                 librarianDashboard.Show();

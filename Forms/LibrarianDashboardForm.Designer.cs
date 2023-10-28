@@ -33,7 +33,7 @@
             this.SearchtextBox = new System.Windows.Forms.TextBox();
             this.searchBookButton = new System.Windows.Forms.Button();
             this.updateBooksBtn = new System.Windows.Forms.Button();
-            this.UpdateProfileBtn = new System.Windows.Forms.Button();
+            this.ViewProfileBtn = new System.Windows.Forms.Button();
             this.LogOutBtn = new System.Windows.Forms.Button();
             this.ViewLibraryButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -85,16 +85,16 @@
             this.updateBooksBtn.UseVisualStyleBackColor = true;
             this.updateBooksBtn.Click += new System.EventHandler(this.updateBooksBtn_Click);
             // 
-            // UpdateProfileBtn
+            // ViewProfileBtn
             // 
-            this.UpdateProfileBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateProfileBtn.Location = new System.Drawing.Point(190, 381);
-            this.UpdateProfileBtn.Name = "UpdateProfileBtn";
-            this.UpdateProfileBtn.Size = new System.Drawing.Size(192, 36);
-            this.UpdateProfileBtn.TabIndex = 4;
-            this.UpdateProfileBtn.Text = "Update Profile";
-            this.UpdateProfileBtn.UseVisualStyleBackColor = true;
-            this.UpdateProfileBtn.Click += new System.EventHandler(this.UpdateProfileBtn_Click);
+            this.ViewProfileBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewProfileBtn.Location = new System.Drawing.Point(190, 381);
+            this.ViewProfileBtn.Name = "ViewProfileBtn";
+            this.ViewProfileBtn.Size = new System.Drawing.Size(192, 36);
+            this.ViewProfileBtn.TabIndex = 4;
+            this.ViewProfileBtn.Text = "View Profile";
+            this.ViewProfileBtn.UseVisualStyleBackColor = true;
+            this.ViewProfileBtn.Click += new System.EventHandler(this.UpdateProfileBtn_Click);
             // 
             // LogOutBtn
             // 
@@ -125,10 +125,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(623, 703);
+            this.ClientSize = new System.Drawing.Size(654, 704);
             this.Controls.Add(this.ViewLibraryButton);
             this.Controls.Add(this.LogOutBtn);
-            this.Controls.Add(this.UpdateProfileBtn);
+            this.Controls.Add(this.ViewProfileBtn);
             this.Controls.Add(this.updateBooksBtn);
             this.Controls.Add(this.searchBookButton);
             this.Controls.Add(this.SearchtextBox);
@@ -149,7 +149,7 @@
         private System.Windows.Forms.TextBox SearchtextBox;
         private System.Windows.Forms.Button searchBookButton;
         private System.Windows.Forms.Button updateBooksBtn;
-        private System.Windows.Forms.Button UpdateProfileBtn;
+        private System.Windows.Forms.Button ViewProfileBtn;
         private System.Windows.Forms.Button LogOutBtn;
         private System.Windows.Forms.Button ViewLibraryButton;
     }

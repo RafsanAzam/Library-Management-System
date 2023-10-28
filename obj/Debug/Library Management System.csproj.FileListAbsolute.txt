@@ -19,3 +19,4 @@ F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Mana
 F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.BorrowBookForm.resources
 F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.ReturnBookForm.resources
 F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.MemberProfileForm.resources
+F:\2023\Spring - 2023\.NET Application Development\Assignment 2 new\Library Management System\Library Management System\obj\Debug\Library_Management_System.Forms.LibrarianProfileForm.resources
