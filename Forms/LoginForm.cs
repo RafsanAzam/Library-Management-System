@@ -77,6 +77,7 @@ namespace Library_Management_System.Forms
                 MemberDashboardForm memberDashboard = new MemberDashboardForm();
 
                 // Show the Member Dashboard Form
+                this.Close();
                 memberDashboard.Show();
             }
             else if(authController.Authenticate(enteredUserName, enteredPassword) == "Librarian")
@@ -91,6 +92,7 @@ namespace Library_Management_System.Forms
                 LibrarianDashboardForm librarianDashboard = new LibrarianDashboardForm();
 
                 // Show the Librarian Dashboard Form
+                this.Close();
                 librarianDashboard.Show();
             }
             else
@@ -103,6 +105,7 @@ namespace Library_Management_System.Forms
         private void SignUpButton_Click(object sender, EventArgs e)
         {
             SignUpForm signUpForm = new SignUpForm();
+            this.Close();
             signUpForm.Show();
         }
 

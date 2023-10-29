@@ -59,5 +59,10 @@ namespace Library_Management_System.Forms
             ViewLibraryForm viewLibraryForm = new ViewLibraryForm();
             viewLibraryForm.Show();
         }
+
+        private void LogOutBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

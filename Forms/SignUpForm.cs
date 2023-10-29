@@ -71,6 +71,7 @@ namespace Library_Management_System.Forms
                     WriteDetailsToLibrarianFile(librarian, "LibrarianDetails.txt");
                     WriteDetailsToCredentialsFile("UserCredentials.txt", librarian.LibrarianId, password, "Librarian");
                     MessageBox.Show($"Successfully Registered. Your User Id is : {librarian.LibrarianId}");
+                    this.Close();
                 }
                 else
                 {
@@ -84,6 +85,7 @@ namespace Library_Management_System.Forms
                     WriteDetailsToMemberFile(member, "memberDetails.txt");
                     WriteDetailsToCredentialsFile("UserCredentials.txt", member.MemberId, password, "Member");
                     MessageBox.Show($"Successfully Registered. Your User Id is : {member.MemberId}");
+                    this.Close();
                 }
             }
         }

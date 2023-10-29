@@ -50,6 +50,7 @@ namespace Library_Management_System.Forms
             AddBookToListViewAndFile(newBook);
             librarianForm.BookListViewLibrarian.Refresh();
             MessageBox.Show("Book entry is successful");
+            this.Close();
 
         }
 
@@ -73,6 +74,30 @@ namespace Library_Management_System.Forms
         private void BookEntryForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void titleTextBoxMouseClick(object sender, MouseEventArgs e)
+        {
+            if(TitletextBox.Text == "Title")
+            {
+                TitletextBox.Clear();
+            }
+        }
+
+        private void AuthorTextBoxMouseClick(object sender, MouseEventArgs e)
+        {
+            if(AuthortextBox.Text == "Author")
+            {
+                AuthortextBox.Clear();
+            }
+        }
+
+        private void IsbnTextBoxMouseClick(object sender, EventArgs e)
+        {
+            if(IsbntextBox.Text == "ISBN No.")
+            {
+                IsbntextBox.Clear();
+            }
         }
     }
 }

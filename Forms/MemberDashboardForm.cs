@@ -58,5 +58,10 @@ namespace Library_Management_System.Forms
             memberProfile.Show();
 
         }
+
+        private void logOutButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

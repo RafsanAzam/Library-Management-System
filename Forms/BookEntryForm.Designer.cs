@@ -110,6 +110,7 @@
             this.TitletextBox.Size = new System.Drawing.Size(218, 30);
             this.TitletextBox.TabIndex = 6;
             this.TitletextBox.Text = "Title";
+            this.TitletextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.titleTextBoxMouseClick);
             // 
             // AuthortextBox
             // 
@@ -119,6 +120,7 @@
             this.AuthortextBox.Size = new System.Drawing.Size(218, 30);
             this.AuthortextBox.TabIndex = 8;
             this.AuthortextBox.Text = "Author Name";
+            this.AuthortextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AuthorTextBoxMouseClick);
             // 
             // IsbntextBox
             // 
@@ -128,6 +130,7 @@
             this.IsbntextBox.Size = new System.Drawing.Size(218, 30);
             this.IsbntextBox.TabIndex = 10;
             this.IsbntextBox.Text = "ISBN No.";
+            this.IsbntextBox.Click += new System.EventHandler(this.IsbnTextBoxMouseClick);
             // 
             // AddBookButton2
             // 
