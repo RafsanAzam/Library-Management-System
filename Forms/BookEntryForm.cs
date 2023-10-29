@@ -86,7 +86,7 @@ namespace Library_Management_System.Forms
 
         private void AuthorTextBoxMouseClick(object sender, MouseEventArgs e)
         {
-            if(AuthortextBox.Text == "Author")
+            if(AuthortextBox.Text == "Author Name")
             {
                 AuthortextBox.Clear();
             }
@@ -98,6 +98,11 @@ namespace Library_Management_System.Forms
             {
                 IsbntextBox.Clear();
             }
+        }
+
+        private void AuthortextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

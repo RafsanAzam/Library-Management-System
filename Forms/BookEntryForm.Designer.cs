@@ -121,6 +121,7 @@
             this.AuthortextBox.TabIndex = 8;
             this.AuthortextBox.Text = "Author Name";
             this.AuthortextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AuthorTextBoxMouseClick);
+            this.AuthortextBox.TextChanged += new System.EventHandler(this.AuthortextBox_TextChanged);
             // 
             // IsbntextBox
             // 
