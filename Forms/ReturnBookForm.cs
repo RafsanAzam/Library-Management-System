@@ -95,37 +95,38 @@ namespace Library_Management_System.Forms
 
             // Read book details from the file and populate the list
             string memberFileName = CurrentMember.MemberId + "_BorrowedBooks.txt";
-
-            string[] lines = File.ReadAllLines(memberFileName);
-
-            foreach (string line in lines)
+            if(File.Exists(memberFileName))
             {
-                string[] bookDetails = line.Split(',');
-                if (bookDetails.Length == 4)
+                string[] lines = File.ReadAllLines(memberFileName);
+
+                foreach (string line in lines)
                 {
-                    BorrowedBook book = new BorrowedBook()
+                    string[] bookDetails = line.Split(',');
+                    if (bookDetails.Length == 4)
                     {
-                        BookId = bookDetails[0],
-                        Title = bookDetails[1],
-                        Author = bookDetails[2],
-                        ISBN = bookDetails[3],
-                    };
-                    memberBorrowedBooks.Add(book);
+                        BorrowedBook book = new BorrowedBook()
+                        {
+                            BookId = bookDetails[0],
+                            Title = bookDetails[1],
+                            Author = bookDetails[2],
+                            ISBN = bookDetails[3],
+                        };
+                        memberBorrowedBooks.Add(book);
+                    }
+
                 }
 
+                // Populate the ListView with book data
+
+                foreach (var book in memberBorrowedBooks)
+                {
+                    ListViewItem item = new ListViewItem(book.BookId);
+                    item.SubItems.Add(book.Title);
+                    item.SubItems.Add(book.Author);
+                    item.SubItems.Add(book.ISBN);
+                    bookListViewMember.Items.Add(item);
+                }
             }
-
-            // Populate the ListView with book data
-
-            foreach (var book in memberBorrowedBooks)
-            {
-                ListViewItem item = new ListViewItem(book.BookId);
-                item.SubItems.Add(book.Title);
-                item.SubItems.Add(book.Author);
-                item.SubItems.Add(book.ISBN);
-                bookListViewMember.Items.Add(item);
-            }
-
         }
 
         private void LoadLibraryBookList()
