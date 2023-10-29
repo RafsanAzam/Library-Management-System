@@ -24,7 +24,6 @@ namespace Library_Management_System.Forms
         {
             string librarianId = CurrentLibrarian.LibrarianId;
             ExtractDetailsFromLibrarianFile(librarianId, "LibrarianDetails.txt");
-            MessageBox.Show(librarianId);
 
             // Check if there are details to display
             if (librarianDetailsList.Count == 4)
